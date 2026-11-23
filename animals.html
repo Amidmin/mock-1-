@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet shop | Animals</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-verd sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Pet shop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="animals.html">Animals</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-orange ms-lg-3">Adopt</a>
+    </div>
+  </div>
+</nav>
+
+<section class="container py-5">
+  <h1 class="text-center fw-bold mb-5">Our animals</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Scottish-fold-cat.webp" class="card-img-top" alt="Luna">
+        <div class="card-body">
+          <h5 class="card-title">Luna <span class="badge bg-primary">cat</span></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Age: 3 years</li>
+          <li class="list-group-item">Size: Medium</li>
+        </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-orange w-100" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
+        </div>
+      </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

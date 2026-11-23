@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P | Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-verd sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Patas Felices</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-orange ms-lg-3">Adopt</a>
+    </div>
+  </div>
+</nav>
+
+<section class="container py-5">
+  <h1 class="text-center fw-bold mb-5">Contact us</h1>
+
+  <form id="contactForm" novalidate>
+    <div class="row g-3">
+
+      <div class="col-12 col-md-6">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phone">
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label for="animal" class="form-label">Animal you're interested in</label>
+        <select class="form-select" id="animal">
+          <option value="">Choose...</option>
+          <option>Luna</option>
+          <option>Milo</option>
+          <option>Rocky</option>
+          <option>Nina</option>
+          <option>Coco</option>
+          <option>Max</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label class="form-label d-block">Visit</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="visit" id="weekday" value="Weekday" checked>
+          <label class="form-check-label" for="weekday">Weekday</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="visit" id="weekend" value="Weekend">
+          <label class="form-check-label" for="weekend">Weekend</label>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label for="people" class="form-label">People coming</label>
+        <input type="number" class="form-control" id="people" min="1" max="5" value="1">
+        <div class="invalid-feedback">Between 1 and 5 people.</div>
+      </div>
+
+      <div class="col-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4"></textarea>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="terms">
+          <label class="form-check-label" for="terms">I accept the terms and conditions</label>
+          <div class="invalid-feedback">You must accept the terms.</div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-orange w-100">Send</button>
+      </div>
+
+    </div>
+  </form>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+:root {
+  --verd: #2e7d32;
+  --taronja: #ff9800;
+  --blanc: #fafaf5;
+  --gris: #333333;
+}
+
+body {
+  background-color: var(--blanc);
+  color: var(--gris);
+}
+
+.bg-verd {
+  background-color: var(--verd);
+}
+
+.btn-orange {
+  background-color: var(--taronja);
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e68900;
+  color: white;
+}
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
